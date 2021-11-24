@@ -47,4 +47,25 @@ function contadorN($finalCuenta){
 }
 contadorN(27);
 
+echo "<br>";
+echo "<hr>";
+
+//ejercicio 4
+
+function contador2($valorFinal=10){
+
+    for($i=0; $i<=$valorFinal; $i+=2){
+        echo "$i";
+        echo ", ";
+    }
+
+}
+contador2();
+
+echo "<br>";
+echo "<hr>";
+
+//ejercicio 5
+
+
 ?>
