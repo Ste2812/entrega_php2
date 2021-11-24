@@ -31,4 +31,20 @@ function contador($valorFinal){
 }
 contador(10);
 
+echo "<br>";
+echo "<hr>";
+
+//ejercicio 3
+
+function contadorN($finalCuenta){
+
+    for($i=0; $i<=$finalCuenta; $i++){
+
+        echo "$i";
+        echo ", ";
+    }
+
+}
+contadorN(27);
+
 ?>
