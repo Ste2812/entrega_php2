@@ -67,5 +67,20 @@ echo "<hr>";
 
 //ejercicio 5
 
+function gradoNota($nota){
+    if($nota<33){
+        echo "El estudiante tendrá que repetir <br>";
+    }else if($nota<45){
+        echo "Grado de tercera división <br>";
+
+    }else if($nota<=59){
+        echo "Grado de segunda división <br>";
+
+    }else{
+        echo "Grado de primera división <br>";
+    }
+
+}
+gradoNota(60);
 
 ?>
