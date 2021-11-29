@@ -83,4 +83,22 @@ function gradoNota($nota){
 }
 gradoNota(60);
 
+
+//ejercicio 6
+
+function isBitten (){
+    
+    if (rand(0, 100)==50){
+        true;
+        echo "Ha mordido.";
+
+    }else{
+        echo "no ha mordido.";
+    }
+    
+
+}
+isBitten();
+
+
 ?>
