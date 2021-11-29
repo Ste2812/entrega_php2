@@ -83,18 +83,25 @@ function gradoNota($nota){
 }
 gradoNota(60);
 
+echo "<br>";
+echo "<hr>";
 
 //ejercicio 6
 
 function isBitten (){
+
+    $bit=false;
     
     if (rand(0, 100)==50){
-        true;
+        $bit=true;
         echo "Ha mordido.";
 
     }else{
+    
         echo "no ha mordido.";
     }
+    return $bit;
+
     
 
 }
