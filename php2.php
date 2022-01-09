@@ -92,7 +92,7 @@ function isBitten (){
 
     $bit=false;
     
-    if (rand(0, 100)==50){
+    if (rand(0, 100)<=50){
         $bit=true;
         echo "Ha mordido.";
 
