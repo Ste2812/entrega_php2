@@ -19,7 +19,7 @@ evaluar();
 echo "<br>";
 echo "<hr>";
 
-//ejercicio 2
+//ejercicio 2 niv 1
 
 function contador($valorFinal){
 
@@ -34,7 +34,7 @@ contador(10);
 echo "<br>";
 echo "<hr>";
 
-//ejercicio 3
+//ejercicio 3 niv 1
 
 function contadorN($finalCuenta){
 
@@ -50,7 +50,7 @@ contadorN(27);
 echo "<br>";
 echo "<hr>";
 
-//ejercicio 4
+//ejercicio 4 niv 1
 
 function contador2($valorFinal=10){
 
@@ -65,7 +65,7 @@ contador2();
 echo "<br>";
 echo "<hr>";
 
-//ejercicio 5
+//ejercicio 5 niv 1
 
 function gradoNota($nota){
     if($nota<33){
@@ -86,7 +86,7 @@ gradoNota(60);
 echo "<br>";
 echo "<hr>";
 
-//ejercicio 6
+//ejercicio 6 niv 1
 
 function isBitten (){
 
@@ -106,6 +106,22 @@ function isBitten (){
 
 }
 isBitten();
+
+echo "<br/>";
+echo "<hr/>";
+
+//ejercicio 1 niv 2
+
+function listaAnyos($anyoInicio, $anyoFin){
+    for ($i=$anyoInicio; $i<=$anyoFin; $i+=4){
+        echo $i."\n";
+
+    }
+
+}
+echo listaAnyos(1960, 2016);
+
+
 
 
 ?>
