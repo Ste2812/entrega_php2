@@ -143,6 +143,42 @@ function costeLlamada($tiempoLlamada){
 
 costeLlamada(5);
 
+echo "<br/>";
+echo "<hr/>";
+
+//ejercicio 3 niv 2
+
+
+function totCompra($unds_chocolate, $unds_chicle, $unds_caramelos){
+   
+    $total_importe= prod_chocolate($unds_chocolate)+prod_chicle($unds_chicle)+prod_caramelos($unds_caramelos);
+
+    echo $total_importe;
+
+}
+function prod_chocolate($cant_chocolate){
+    
+    $precio_chocolate= 1;
+    $item_1= $cant_chocolate*$precio_chocolate;
+    return $item_1;
+
+}
+function prod_chicle($cant_chicle){
+
+    $precio_chicle= 0.50;
+    $item_2= $cant_chicle*$precio_chicle;
+    return $item_2;
+
+}
+function prod_caramelos($cant_caramelos){
+
+    $precio_caramelos= 1.50;
+    $item_3= $cant_caramelos*$precio_caramelos;
+    return $item_3;
+
+}
+echo totCompra(2, 4, 2);
+
 
 
 
