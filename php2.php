@@ -1,8 +1,7 @@
 <?php
 
-function evaluar(){
+function evaluar($evaluarValor){
 
-$evaluarValor=31;
 
     if($evaluarValor%2==0){
     echo "El numero es par.";
@@ -14,7 +13,7 @@ $evaluarValor=31;
     echo "El numero es impar."; 
     }
 }
-evaluar();
+evaluar(31);
 
 echo "<br>";
 echo "<hr>";
@@ -120,6 +119,29 @@ function listaAnyos($anyoInicio, $anyoFin){
 
 }
 echo listaAnyos(1960, 2016);
+
+echo "<br/>";
+echo "<hr/>";
+
+//ejercicio 2 niv 2
+
+function costeLlamada($tiempoLlamada){
+
+    $maxTiempoStandard= 3;   
+    $tarifaStandard= 0.10;
+    $suplementoExtra= 0.05;
+
+    if($tiempoLlamada==$maxTiempoStandard){
+        $precioLlamada= $tarifaStandard*$tiempoLlamada;
+
+    }else{
+        $precioLlamada= ($tiempoLlamada*$tarifaStandard)+($suplementoExtra*($tiempoLlamada-$maxTiempoStandard));
+
+    }
+    echo $precioLlamada;
+}
+
+costeLlamada(5);
 
 
 
