@@ -143,7 +143,7 @@ function costeLlamada($tiempoLlamada){
 
 costeLlamada(5);
 
-echo "<br/>";
+echo "<br>";
 echo "<hr/>";
 
 //ejercicio 3 niv 2
@@ -178,6 +178,43 @@ function prod_caramelos($cant_caramelos){
 
 }
 echo totCompra(2, 4, 2);
+
+echo "<br/>";
+echo "<hr/>";
+
+//ejercicio 1 niv 3
+
+function cribaEratostenes($input){
+
+    for($i=2; $i<$input; $i++){
+        $i=true;
+    }
+    $numeros=2;
+
+    for($n=2; $n<$input; $n++){
+        if($numeros= array($n)){
+            for($i=$n*$n; $i<$input; $i+=$n){
+                $numeros!= array($i);
+            }
+        }
+    }
+    echo "numeros primos: ";
+    for($n=2; $n<$input; $n++){
+        if($numeros= array($n)){
+            echo $n. "\n";
+        }
+    }
+
+}
+
+cribaEratostenes(100);
+    
+
+
+
+
+
+
 
 
 
